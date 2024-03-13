@@ -1,0 +1,105 @@
+/* HEADER */
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 50px;
+}
+.headinner {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+}
+.main-menu {
+  display: flex;
+
+}
+.main-menu .item .item__name {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  padding: 30px;
+}
+.nav .item__contents .inner {
+  display: none;
+}
+.btn {
+  display: flex;
+  align-items: center;
+}
+.btn .material-icons {
+  font-size: 60px;
+}
+.btn .langchangebtn {
+  margin-right: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .header {
+  padding: 0 50px;
+}
+.headinner {
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+
+}
+.navbar li {
+  padding: 10px 0 10px;
+}
+.navbar li + li {
+  margin-left: 50px;
+}
+.navbar li a {
+  color: black;
+  margin: 30px;
+  
+}
+.header .headinner .btn {
+  display: flex;
+  margin: 30px;
+}
+.header .headinner .btn .material-icons {
+  font-size: 65px;
+}
+.header .headinner .btn .languagechange {
+  margin-right: 50px;
+} */

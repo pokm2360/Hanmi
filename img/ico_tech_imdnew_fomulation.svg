@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_16" data-name="사각형 16" width="38" height="87" transform="translate(44) rotate(30)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_6" data-name="그룹 6" transform="translate(-610 -902)">
+    <g id="tabicon_04_off" transform="translate(621.5 904)" clip-path="url(#clip-path)">
+      <path id="Vector" d="M59.954,10.366a18.014,18.014,0,0,1,6.588,24.588L54.293,56.172l-31.177-18,12.25-21.218A18.014,18.014,0,0,1,59.954,10.366Zm.5-.866A19,19,0,0,0,34.5,16.455L21.75,38.538l32.909,19,12.75-22.084A19,19,0,0,0,60.454,9.5Z" fill="#b8b8b8"/>
+      <path id="Vector_2" d="M53.793,57.038,42.043,77.39a18,18,0,1,1-31.177-18l11.75-20.352Zm1.366-.366-32.909-19L10,58.89a19,19,0,0,0,32.909,19Z" fill="#b8b8b8"/>
+    </g>
+  </g>
+</svg>
