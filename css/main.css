@@ -10,14 +10,14 @@ header > .inner {
   height: 120px;
   align-items: center;
   position: fixed;
-  background-color: antiquewhite;
+  background-color: white;
   z-index: 20;
 }
 .inner .main-menu .item__name:hover {
   color: chocolate;
 }
 .inner .main-menu .item__name .inner:hover {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #e1251b;
 }
 .inner > .logo {
   padding: 30px;
@@ -52,12 +52,14 @@ header > .inner {
 .main-menu .item__contents > ul {
   display: flex;
   /* padding: 20px 0; */
-  margin-top: 20px;
+  /* margin-top: 20px; */
   justify-content: center;
 }
 .main-menu .item__contents > ul > li {
   /* 상세 메뉴 가로 너비를 통일 */
   width: 300px;
+  height: 260px;
+  margin-top: 15px;
   /* background-color: aqua; */
 }
 .main-menu .item__contents > ul > li h3 {
@@ -110,7 +112,7 @@ header .main-menu .item .item__contents > ul > li ul li:hover {
   height: 900px;
 }
 .main .main-text > h1 {
-  color: red;
+  color: #e1251b;
   font-size: 150px;
   font-weight: 600;
 }
@@ -161,7 +163,7 @@ header .main-menu .item .item__contents > ul > li ul li:hover {
 .news > .inner > h2 {
   font-size: 100px;
   font-weight: 500;
-  color: red;
+  color: #e1251b;
   text-align: left;
 }
 .news > .inner > h2 b {
@@ -216,14 +218,67 @@ header .main-menu .item .item__contents > ul > li ul li:hover {
   color: black;
 }
 
+/* newslink */
+.newslink {
+  height: 660px;
+  background-color: #e1251b;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.newslink .newsroom {
+  height: 100%;
+  width: 50%;
+  border-right: solid 1px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newslink .Investors {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newslink .newsroom .text h3 {
+  font-size: 60px;
+  font-weight: 900;
+}
+.newslink .newsroom .text p {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 30px 0;
+}
+.newslink .newsroom .text a {
+  font-size: 50px;
+  color: white;
+}
+.newslink .Investors .text h3 {
+  font-size: 60px;
+  font-weight: 900;
+}
+.newslink .Investors .text p {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 30px 0;
+  line-height: 1.3;
+
+}
+.newslink .Investors .text a {
+  font-size: 50px;
+  color: white;
+}
 /* technology moveOn */
 .technology-moveOn {
   position: relative;
+  height: 1616px;
   min-height: 1080px;
-  /* background-image: url(/img/img_tech_bg1.jpg);
+  background-image: url(/img/img_tech_bg1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 0 340px; */
+  background-position-y: 30px;
+
 }
 .technology-moveOn .inner {
   width: 100%;
@@ -232,7 +287,7 @@ header .main-menu .item .item__contents > ul > li ul li:hover {
   padding: 200px 50px;
   margin: 0 176px 0;
   display: flex;
-
+  box-sizing: border-box;
 }
 
 .technology-moveOn .inner .icons img {
@@ -241,92 +296,198 @@ header .main-menu .item .item__contents > ul > li ul li:hover {
   padding: 30px;
 }
 .technology-moveOn .inner .icons:first-child {
-  border-top: 1px solid red;
+  border-top: 1px solid #e1251b;
 }
 .technology-moveOn .inner .content .title b {
   font-weight: 900;
 }
 .technology-moveOn .inner .content .title {
-  color: red;
+  color: #e1251b;
   font-size: 100px;
   font-weight: 500;
+}
+.technology-moveOn .inner .content {
+  margin-left: 200px;
 }
 .technology-moveOn .inner .content > p {
   margin-top: 60px;
   font-size: 25px;
   line-height: 1.7;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .header {
-  padding: 0 50px;
+.technology-moveOn .inner .content .content-item {
+  line-height: 1.7;
 }
-.headinner {
-  height: 92px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.navbar {
-  display: flex;
-  font-size: 24px;
+.technology-moveOn .inner .content .content-item h3 {
+  font-size: 35px;
+  color: gray;
+  margin-top: 30px;
   font-weight: 600;
-
 }
-.navbar li {
-  padding: 10px 0 10px;
+.technology-moveOn .inner .content .content-item p {
+  font-size: 26px;
+  color: gray;
 }
-.navbar li + li {
-  margin-left: 50px;
-}
-.navbar li a {
+.technology-moveOn .inner .content .content-item a {
   color: black;
-  margin: 30px;
+  font-size: 24px;
+  font-weight: 900;
+  position: absolute;
+  top: 800px;
+}
+/* 움직이는 텍스트 */
+
+.animated-title {
+  font-size: 300px; 
+  font-weight: 300; 
+  position: relative; 
+  width: 100%;
+  max-width: 100%; 
+  height: auto; 
+  padding: 100px 0; 
+  color: gray;
+  font-weight: 900;
+  opacity: 0.4;
+}
+.animated-title .track { 
+  position: absolute ; 
+  white-space: nowrap ;
+  will-change: transform ;
+  animation: marquee 60s linear infinite ; }
   
+@keyframes marquee {
+  from { transform: translateX(0) ; }
+  to { transform: translateX(-50%) ; }
 }
-.header .headinner .btn {
-  display: flex;
-  margin: 30px;
+
+/* ESG REPORTS */
+.esg-report {
+  width: 100%;
+  height: 1080px;
+  background-image: url(/img/bg_esg_report.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-.header .headinner .btn .material-icons {
-  font-size: 65px;
+.esg-report .inner {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  max-width: 1552px;
+  margin: 0 auto;
+  padding: 200px 50px;
 }
-.header .headinner .btn .languagechange {
-  margin-right: 50px;
-} */
+.esg-report .inner b {
+  font-size: 100px;
+  font-weight: 900;
+}
+.esg-report .inner h2 {
+  font-size: 100px;
+}
+.esg-report .inner p {
+  font-size: 24px;
+  line-height: 1.7;
+  margin-top: 30px;
+  font-weight: 500;
+}
+.esg-report .inner a {
+position: absolute;
+font-size: 24px;
+font-weight: 900;
+top: 280px;
+right: 200px;
+color: black;
+}
+
+/* RECRUITE */
+.recruite {
+  width: 100%;
+}
+.recruite .inner {
+  height: 1080px;
+  padding: 200px 50px;
+  margin: 0 180px;
+}
+.recruite .inner .imgwrap {
+  position: relative;
+  width: 1452px;
+  height: 1008px;
+  margin: 0 auto;
+}
+.recruite .inner p {
+  position: absolute;
+  right: 420px;
+  top: 320px;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+.recruite .inner b{
+  font-size: 60px;
+  font-weight: 600;
+}
+.recruite .inner .imgwrap .img_recruit1 {
+  position: absolute;
+  left: 50px;
+}
+.recruite .inner .imgwrap .img_recruit2 {
+  position: absolute;
+  right: 70px;
+  top: 150px;
+}
+.recruite .inner .imgwrap .img_recruit3 {
+  position: absolute;
+  right: 0;
+  bottom: 300px;
+}
+.recruite .inner .imgwrap .img_recruit4 {
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+}
+.recruite .inner .imgwrap .img_recruit5 {
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+  z-index: 5;
+}
+.recruite .inner .imgwrap .img_recruit6 {
+  position: absolute;
+  bottom: 200px;
+}
+.recruite .inner .imgwrap .btn {
+  position: absolute;
+  right: 650px;
+  top: 650px;
+  min-width: 170px;
+  height: 50px;
+  border-radius: 60px;
+  border: none;
+  background-color: #e1251b;
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+.stock .inner {
+  width: 100%;
+  height: 230px;
+  background-color: #e1251b;
+}
+
+/* footer */
+.footer .footerinner {
+  height: 340px;
+  margin: 0 174px;
+  padding: 100px 50px 0;
+}
+.footer .footerlink {
+  line-height: 1.6;
+}
+.footer .footerlink a {
+  color: #e1251b;
+  font-size: 25px;
+  font-weight: 900;
+}
+.footer .footerlink a:first-child{
+  margin-right: 60px;
+}
