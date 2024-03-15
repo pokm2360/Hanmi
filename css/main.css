@@ -14,7 +14,7 @@ header > .inner {
   z-index: 20;
 }
 .inner .main-menu .item__name:hover {
-  border-bottom: 2px solid red;
+  color: chocolate;
 }
 .inner .main-menu .item__name .inner:hover {
   border-bottom: 2px solid red;
@@ -22,8 +22,11 @@ header > .inner {
 .inner > .logo {
   padding: 30px;
 }
+.inner > .btn .material-icons {
+  margin-right: 30px;
+}
 
-/* 메인메뉴 */
+/* 헤더 */
 .main-menu {
   position: relative;
   display: flex;
@@ -65,12 +68,16 @@ header > .inner {
   cursor: pointer;
   box-sizing: border-box;
 }
+.main-menu .item__contents > ul > li h3:hover {
+  color: chocolate;
+}
 header .main-menu .item .item__contents > ul > li ul li {
   padding: 5px 0;
   font-size: 18px;
   color: #7b7b7b;
   cursor: pointer;
   box-sizing: border-box;
+  line-height: 1.5;
 }
 header .main-menu .item .item__contents > ul > li ul li:hover {
   color: black;
@@ -80,9 +87,7 @@ header .main-menu .item .item__contents > ul > li ul li:hover {
   display: flex;
   align-items: center;
 }
-.btn .material-icons {
-  font-size: 60px;
-}
+
 .btn .langchangebtn {
   margin-right: 50px;
 }
@@ -117,7 +122,6 @@ header .main-menu .item .item__contents > ul > li ul li:hover {
 .main .circle {
   position: absolute;
   margin-top: 800px;
-  rotate: -deg;
   animation-name: turn;
   animation-duration: 4s;
   animation-fill-mode: both;
@@ -126,51 +130,134 @@ header .main-menu .item .item__contents > ul > li ul li:hover {
 @keyframes turn {
   100% {transform: rotate(360deg)}
 }
-.main .main-slide {
 
-}
-.main .main-slide img {
+/* swiper */
+.main2 .swiper img {
   height: 100vh;
   width: 100%;
   /* position: absolute; */
-  /* z-index: 10; */
 }
+/* .main2 .swiper-pagination {
+  bottom: 50px;
+  z-index: 1;
+} */
 
 /* latest news */
 
 .news {
   height: 1088px;
+  position: relative;
   justify-content: center;
   align-items: center;
 }
 .news > .inner {
-  flex-direction: column;
-  
+  height: 100%;
+  width: 100%;
+  max-width: 1552px;
+  margin: 0 auto;
+  padding: 200px 50px;
+  box-sizing: border-box;
 }
 .news > .inner > h2 {
   font-size: 100px;
-  font-weight: 400;
-  text-align: center;
+  font-weight: 500;
+  color: red;
+  text-align: left;
+}
+.news > .inner > h2 b {
+  font-weight: 600;
 }
 .news > .inner > a {
-  
+  position: absolute;
+  top: 287px;
+  right: 500px;
+  padding: 15px 89px 15px 0;
+  min-width: 191px;
+  font-size: 20px;
+  color: black;
+  font-weight: 900;
 }
 .news .inner .news-content  {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 90px;
 }
 .news .inner .news-content .news-content-1 img {
   width: 464px;
   height: 312px;
+  border-radius: 15px 15px 0 0;
 }
 .news .inner .news-content .news-content-2 img {
   width: 464px;
   height: 312px;
+  border-radius: 15px 15px 0 0;
+  border: none;
 }
 .news .inner .news-content .news-content-3 img {
   width: 464px;
   height: 312px;
+  border-radius: 15px 15px 0 0;
 }
+
+.news .inner .news-content h6 {
+  height: 68px;
+  max-height: 68px;
+  font-size: 20px;
+  font-weight: 900;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  padding: 32px;
+  color: black;
+  /* font-family: sans-serif; */
+}
+.news .inner .news-content p {
+  font-size: 20px;
+  padding: 0 32px 0;
+  color: black;
+}
+
+/* technology moveOn */
+.technology-moveOn {
+  position: relative;
+  min-height: 1080px;
+  /* background-image: url(/img/img_tech_bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 340px; */
+}
+.technology-moveOn .inner {
+  width: 100%;
+  max-width: 1552px;
+  min-height: 1080px;
+  padding: 200px 50px;
+  margin: 0 176px 0;
+  display: flex;
+
+}
+
+.technology-moveOn .inner .icons img {
+  width: 100px;
+  height: 130px;
+  padding: 30px;
+}
+.technology-moveOn .inner .icons:first-child {
+  border-top: 1px solid red;
+}
+.technology-moveOn .inner .content .title b {
+  font-weight: 900;
+}
+.technology-moveOn .inner .content .title {
+  color: red;
+  font-size: 100px;
+  font-weight: 500;
+}
+.technology-moveOn .inner .content > p {
+  margin-top: 60px;
+  font-size: 25px;
+  line-height: 1.7;
+}
+
+
 
 
 

@@ -11,11 +11,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
 
+<!-- SWIPER CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 <!-- css -->
 <link rel="stylesheet" href="./css/main.css">
 
+<!-- SWIPER JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- youtube.js -->
+<script defer src="js/youtube.js"></script>
+
 <!-- js -->
 <script defer src="./js/main.js"></script>
+
 
 </head>
 <!-- HEADER -->
@@ -153,59 +162,128 @@
       <div class="langchange">
         <button class="langchangebtn">KOR</button>
       </div>
-      <span class="material-icons">menu</span>
+      <a href="javascript:void(0)" class="material-icons"><img src="/img/btn_menu.svg" alt=""></a>
     </div>
   </div>
 </header>
 
-<!-- 메인1 -->
-<div class="main">
-  <div class="main-intro">
-    <div class="main-text">
-      <h1>Hanmi's New Story</h1>
-      <p>힘차게 도약하는 한미
-        <br>
-        함께하는 미래
-        <br>
-        <br>
-        한미약품의 새로운 이야기가 펼쳐집니다.
-      </p>
-    </div>
-    <div class="circle">
-    <img src="/img/img_main_circle.svg" alt="circle">
-    </div>
-    <div class="main-slide">
-    <img src="/img/main3.png" alt="main3">
-    </div>
-  </div>
-</div>
-
-<!-- latest news -->
-<div class="news">
-  <div class="inner">
-    <h2>Latest News</h2>
-    <a href="javascript:void(0)">view more</a>
-    <div class="news-content">
-      <div class="news-content-1">
-        <a href="javascript:void(0)"><img src="/img/news1.jpg" alt="news1"></a>
-        <p>의사와 환자 잇는 23회 한미수필문학상 대상은 정진형 전공의</p>
-        <p>2024.03.14</p>
-      </div>
-      <div class="news-content-2">
-        <a href="javascript:void(0)"><img src="/img/news2.jpg" alt="news2"></a>
-        <p>한미사이언스, 통합비전 실현할 이사진과 주주친화정책 내놨다</p>
-        <p>2024.03.11</p>
-      </div>
-      <div class="news-content-3">
-        <a href="javascript:void(0)"><img src="/img/news3.jpg" alt="news2"></a>
-        <p>한미약품, 차세대 비만치료 삼중작용제 임상 1상 IND 제출</p>
-        <p>2024.03.08</p>
-      </div>
-    </div>
-  </div>
-</div>
-
 <body>
+  <!-- 메인1 -->
+  <div class="main">
+    <div class="main-intro">
+      <div class="main-text">
+        <h1>Hanmi's New Story</h1>
+        <p>힘차게 도약하는 한미
+          <br>
+          함께하는 미래
+          <br>
+          <br>
+          한미약품의 새로운 이야기가 펼쳐집니다.
+        </p>
+      </div>
+      <div class="circle">
+      <img src="/img/img_main_circle.svg" alt="circle">
+      </div>
+    </div>
+  </div>
+  
+  <div class="main2">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- <div class="swiper-slide">
+          <div class="video-container">
+            <div class="yt-player" id="player" data-id="vXqAvJLN8DA"></div>
+          </div>
+        </div> -->
+        <div class="swiper-slide">
+          <img src="/img/slide1.png" alt="slide">
+          <a href="javascript:void(0)" class="slide"></a>
+        </div>
+        <div class="swiper-slide">
+          <img src="/img/slide2.png" alt="slide">
+          <a href="javascript:void(0)" class="slide"></a>
+        </div>
+        <div class="swiper-slide">
+          <img src="/img/find_store_picture2.jpg" alt="slide">
+          <a href="javascript:void(0)" class="slide"></a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- <div class="swiper-pagination"></div>
+  
+      <div class="swiper-button-prev">
+        <span class="material-icons">arrow_back</span>
+      </div>
+  
+      <div class="swiper-button-next">
+        <span class="material-icons">arrow_forward</span>
+      </div> -->
+  </div>
+  
+  <!-- latest news -->
+  <div class="news">
+    <div class="inner">
+      <h2>
+        <b>Latest</b> 
+        News
+      </h2>
+      <a href="javascript:void(0)">view more</a>
+      <div class="news-content">
+        <div class="news-content-1">
+          <a href="javascript:void(0)"><img src="/img/news1.jpg" alt="news1">
+            <h6>로봇팔 달린 자동조제기 '메니스', 독일 if 디자인 어워드 수상</h6>
+            <p>2024.03.14</p>
+          </a>
+        </div>
+        <div class="news-content-2">
+          <a href="javascript:void(0)"><img src="/img/news2.jpg" alt="news2">
+            <h6>의사와 환자 잇는 23회 한미수필문학상 대상은 정진형 전공의</h6>
+            <p>2024.03.14</p>
+          </a>
+        </div>
+        <div class="news-content-3">
+          <a href="javascript:void(0)"><img src="/img/news3.jpg" alt="news2">
+            <h6>한미사이언스, 통합비전 실현할 이사진과 주주친화정책 내놨다</h6>
+            <p>2024.03.11</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- technology moveOn -->
+  <section class="technology-moveOn">
+    <div class="inner">
+      <ul class="icons">
+        <li><a href="javascript:void(0)"><img src="/img/ico_tech_obesity_on.svg" alt=""></a></li>
+        <li><a href="javascript:void(0)"><img src="/img/ico_tech_pentambody.svg" alt=""></a></li>
+        <li><a href="javascript:void(0)"><img src="/img/ico_tech_imdnew_fomulation.svg" alt=""></a></li>
+      </ul>
+      <div class="content">
+        <strong class="title">
+          <b>Focus on</b> Making
+          <br>
+          Inovative Medicines
+        </strong>
+        <p>한미약품은 다양한 치료영역을 포괄하는
+          <br>
+          탄탄한 R&D 인프라를 바탕으로
+          <br>
+          제약분야에서 혁신을 선도하고 있습니다
+        </p>
+        <div class="content-item">
+          <h3>비만/대사</h3>
+          <p>비만,대사 이상 관련 지방간염 등 다양한 작용기전
+            <br>
+            Best-in-class 신약 개발
+          </p>
+          <a href="javascript:void(0)">View More</a>
+        </div>
+      </div>
+    </div>
+    
+  </section>
   
 </body>
 </html>
