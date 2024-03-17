@@ -157,6 +157,7 @@ header .main-menu .item .item__contents > ul > li ul li:hover {
   position: relative;
   justify-content: center;
   align-items: center;
+  background-color: #e0ece2a9;
 }
 .news > .inner {
   height: 100%;
