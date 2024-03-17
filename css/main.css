@@ -1,4 +1,8 @@
 /* HEADER */
+
+body {
+overflow-x: hidden;
+}
 a {
   text-decoration: none;
 }
@@ -45,6 +49,8 @@ header > .inner {
   position: fixed;
   display: none;
   background-color: white;
+  border-top: 1px solid #e1251b;
+  margin-top: 30px;
 }
 .main-menu .item:hover .item__contents {
   display: block;
@@ -274,7 +280,7 @@ header .main-menu .item .item__contents > ul > li ul li:hover {
   position: relative;
   height: 1616px;
   min-height: 1080px;
-  background-image: url(/img/img_tech_bg1.jpg);
+  background-image: url(/Hanmi/img/img_tech_bg1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 30px;
@@ -363,7 +369,7 @@ header .main-menu .item .item__contents > ul > li ul li:hover {
 .esg-report {
   width: 100%;
   height: 1080px;
-  background-image: url(/img/bg_esg_report.jpg);
+  background-image: url(/Hanmi/img/bg_esg_report.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
