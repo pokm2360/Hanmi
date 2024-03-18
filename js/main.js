@@ -1,4 +1,4 @@
-
+// swiper 1
 new Swiper('.main2 .swiper', {
   direction: 'horizontal',
   loop: true,
@@ -18,6 +18,8 @@ new Swiper('.main2 .swiper', {
 
 });
 
+
+// to-Top scroll
 const toTopEl = document.querySelector('#to-Top');
 toTopEl.addEventListener('click', function () {
   gsap.to(window, 0.6, {
@@ -36,3 +38,6 @@ toTopEl.addEventListener('click', function () {
 //       display: 'block'
 //     });
 //   }});
+
+
+// 마우스 커서 효과는 구글링해서 아무거나
