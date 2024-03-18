@@ -17,3 +17,22 @@ new Swiper('.main2 .swiper', {
   },
 
 });
+
+const toTopEl = document.querySelector('#to-Top');
+toTopEl.addEventListener('click', function () {
+  gsap.to(window, 0.6, {
+    scrollTo: 0 
+  })
+});
+// window.addEventListener('scroll', function () {
+//   if (window.scrollY) {
+//     gsap.to(toTopEl, 0.6, {
+//       opacity: 0,
+//       display: 'none'
+//     });
+//   } else { 
+//     gsap.to(toTopEl, 0.6, {
+//       opacity: 1,
+//       display: 'block'
+//     });
+//   }});

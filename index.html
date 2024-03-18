@@ -18,6 +18,16 @@
 <!-- css -->
 <link rel="stylesheet" href="./css/main.css">
 
+<!-- GSAP -->
+<!-- 순서 주의(main.js에서 사용하니까 더 앞에) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- ScrollToPlugin -->
+<!-- 순서 주의(gsap.js 보다 더 뒤에) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- SCROLLMAGIC -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- SWIPER JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
@@ -200,6 +210,15 @@
         <div class="swiper-slide">
           <img src="./img/slide1.png" alt="slide">
           <a href="javascript:void(0)" class="slide"></a>
+          <div class="slidetext">
+            <h3>The Hanmi Way</h3>
+            <p>
+              Nopath started as a path
+              <br>
+              We seek a better future for humanity on it.
+            </p>
+            <a href="javascript:void(0)" class="btn">View More</a>
+          </div>
         </div>
         <div class="swiper-slide">
           <img src="./img/slide2.png" alt="slide">
@@ -355,18 +374,19 @@
   <section class="stock">
 		<div class="inner">
 			<div class="stockInfo">
-				<strong class="title">STOCK</strong>
+				<strong class="title"><a href="javascript:void(0)">STOCK</a></strong>
 				<div class="stockIframe">
 					<iframe src="https://ir.gsifn.io/hanmi/ir5_main.html" title="주가정보"></iframe>
 				</div>
 			</div>
 			<a href=javascript:void(0) class="btnIR">Investor Relations</a>
+      <a href=javascript:void(0) class="material-symbols-outlined">trending_flat</a>
 		</div>
 	</section>
 
   <!-- footer -->
   <section class="footer">
-    <div class="footerinner">
+    <div class="inner">
       <div class="footerlink">
         <a href="javascript:void(0)">전자공고</a>
         <a href="javascript:void(0)">개인정보처리방침</a>
@@ -382,17 +402,11 @@
         <br>
         <p>&copy;Hanmi Pharm.Co.,Ltd. All Rights Reserved.</p>
       </div>
+      <a href="javascript:void(0)"><img src="./img/img_wa_mark.png" alt="mark" class="wamark"></a>
+    </div>
+    <div id="to-Top">
+      <span class=top><img src="./img/btn_top.svg" alt="top"></span>
     </div>
   </section>
-  <!-- <div class="stock">
-    <div class="inner">
-      <div class="content-stock">
-        STOCK
-      </div>
-      <div class="relations">
-
-      </div>
-    </div>
-  </div> -->
 </body>
 </html>

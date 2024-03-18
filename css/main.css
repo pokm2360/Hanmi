@@ -101,10 +101,6 @@ header .main-menu .item .item__contents > ul > li ul li:hover {
 }
 
 /* 메인 */
-.main {
-
-
-}
 .main .main-intro {
   margin: 0 176px 0 ;
   padding: 0 50px;
@@ -157,7 +153,6 @@ header .main-menu .item .item__contents > ul > li ul li:hover {
   position: relative;
   justify-content: center;
   align-items: center;
-  background-color: #e0ece2a9;
 }
 .news > .inner {
   height: 100%;
@@ -281,7 +276,7 @@ header .main-menu .item .item__contents > ul > li ul li:hover {
   position: relative;
   height: 1616px;
   min-height: 1080px;
-  background-image: url(/Hanmi/img/img_tech_bg1.jpg);
+  background-image: url(/img/img_tech_bg1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 30px;
@@ -370,7 +365,7 @@ header .main-menu .item .item__contents > ul > li ul li:hover {
 .esg-report {
   width: 100%;
   height: 1080px;
-  background-image: url(/Hanmi/img/bg_esg_report.jpg);
+  background-image: url(/img/bg_esg_report.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -428,38 +423,44 @@ color: black;
   line-height: 1.4;
   text-align: center;
 }
-.recruite .inner b{
+.recruite .inner b {
   font-size: 60px;
   font-weight: 600;
 }
 .recruite .inner .imgwrap .img_recruit1 {
   position: absolute;
   left: 50px;
+  transition: 1s;
 }
 .recruite .inner .imgwrap .img_recruit2 {
   position: absolute;
   right: 70px;
   top: 150px;
+  transition: 2s;
 }
 .recruite .inner .imgwrap .img_recruit3 {
   position: absolute;
   right: 0;
   bottom: 300px;
+  transition: 4s;
 }
 .recruite .inner .imgwrap .img_recruit4 {
   position: absolute;
   right: 100px;
   bottom: 50px;
+  transition: 5s;
 }
 .recruite .inner .imgwrap .img_recruit5 {
   position: absolute;
   bottom: 0;
   left: 200px;
   z-index: 5;
+  transition: 6s;
 }
 .recruite .inner .imgwrap .img_recruit6 {
   position: absolute;
   bottom: 200px;
+  transition: 7s;
 }
 .recruite .inner .imgwrap .btn {
   position: absolute;
@@ -475,14 +476,49 @@ color: black;
   justify-content: center;
   cursor: pointer;
 }
-.stock .inner {
+.stock {
   width: 100%;
   height: 230px;
   background-color: #e1251b;
 }
+.stock .inner {
+  height: 100%;
+  margin: 0 176px;
+  padding: 0 50px;
+  display: flex;
+}
+.stock .stockInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0.6;
+  border-right: 1px solid white;
+}
+.stock .stockInfo strong a {
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+  margin-right: 70px;
+}
+.stock .inner .btnIR {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 36px;
+  margin-left: 100px;
+}
+.stock .inner .material-symbols-outlined {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 60px;
+  margin-left: 60px;
+}
+
 
 /* footer */
-.footer .footerinner {
+.footer .inner {
+  position: relative;
   height: 340px;
   margin: 0 174px;
   padding: 100px 50px 0;
@@ -492,9 +528,30 @@ color: black;
 }
 .footer .footerlink a {
   color: #e1251b;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 900;
 }
 .footer .footerlink a:first-child{
   margin-right: 60px;
+}
+.footer .footerinfo {
+  line-height: 1.7;
+  font-size: 20px;
+  font-weight: 400;
+}
+.footer .inner .wamark {
+  position: absolute;
+  width: 140px;
+  height: 90px;
+  right: 0;
+  bottom: 100px;
+}
+
+/* to-top */
+#to-Top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  z-index: 9;
 }
