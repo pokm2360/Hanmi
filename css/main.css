@@ -172,28 +172,62 @@ header .main-menu .item .item__contents > ul > li ul li a:hover {
   position: relative;
 }
 .main2 .swiper .swiper-wrapper .swiper-slide .slidetext {
-  position:absolute;
+  position: absolute;
   color: white;
   font-size: 50px;
-  bottom: 500px;
-  left: 300px;
+  bottom: 300px;
+  left: 120px;
+  line-height: 1.5;
+}
+.main2 .swiper .swiper-wrapper .swiper-slide .slidetext h3 {
+  font-size: 150px;
+  font-weight: 900;
+}
+.main2 .swiper .swiper-wrapper .swiper-slide .slidetext .btn {
+  color: white;
+  margin-top: 60px;
+  font-size: 30px;
+  font-weight: 900;
 }
 .main2 .swiper .swiper-wrapper .swiper-slide .slidetext2 {
   position: absolute;
   color: white;
   font-size: 50px;
-  bottom: 500px;
-  left: 300px;
+  bottom: 300px;
+  left: 120px;
+  line-height: 1.5;
+}
+.main2 .swiper .swiper-wrapper .swiper-slide .slidetext2 h3 {
+  font-size: 150px;
+  font-weight: 900;
 }
 .main2 .swiper .swiper-wrapper .swiper-slide .slidetext3 {
   position: absolute;
   color: white;
   font-size: 50px;
-  bottom: 500px;
-  left: 300px;
+  bottom: 300px;
+  left: 120px;
+  line-height: 1.5;
 }
-.main2 span {
+.main2 .swiper .swiper-wrapper .swiper-slide .slidetext3 h3 {
+  font-size: 150px;
+  font-weight: 900;
+}
+.main2 .btn_play {
+  height: 30px;
   position: absolute;
+  right: 450px;
+  bottom: 200px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  z-index: 5;
+}
+.main2 .btn_pause{
+  height: 30px;
+  position: absolute;
+  right: 400px;
+  bottom: 200px;
   font-size: 40px;
   color: white;
   cursor: pointer;
@@ -204,14 +238,9 @@ header .main-menu .item .item__contents > ul > li ul li a:hover {
   width: 100%;
 }
 .main2 .swiper video {
-  width: 100%;
   height: 100vh;
+  width: 100%;
 }
-/* .main2 .swiper-pagination {
-  bottom: 50px;
-  z-index: 1;
-} */
-
 
 /* latest news */
 
@@ -429,14 +458,21 @@ header .main-menu .item .item__contents > ul > li ul li a:hover {
   to { transform: translateX(-50%) ; }
 }
 
+/* WHAT WE MAKES */
+.medicine .medicine5 {
+  height: 600px;
+  width: 600px;
+}
+
 /* ESG REPORTS */
 .esg-report {
   width: 100%;
-  height: 1080px;
+  min-height: 900px;
   background-color: #ccc;
-  box-sizing: border-box;
   background-image: url(/img/bg_esg_report.jpg);
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .esg-report .inner {
   position: relative;
@@ -499,8 +535,9 @@ color: black;
 .recruite .inner .imgwrap .img_recruit1 {
   position: absolute;
   left: 50px;
-  transition: 1s;
+  transition: height 1s;
 }
+
 .recruite .inner .imgwrap .img_recruit2 {
   position: absolute;
   right: 70px;

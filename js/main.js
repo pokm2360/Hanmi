@@ -1,9 +1,9 @@
 // swiper 1
-new Swiper('.main2 .swiper', {
+const slideEl = new Swiper('.main2 .swiper', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
-    delay: 2000 ,
+    delay: 5000 ,
     disableOnInteraction: false
   },
   slidesPerView: 1,
@@ -17,46 +17,34 @@ new Swiper('.main2 .swiper', {
     prevEl: '.main2 .swiper-button-prev',
   },
 });
-
-var sw = 0;
-$('.btn_pause').click(function(){
-    if(sw==0){
-        $('.btn_pause').addClass('on');
-        mySwiper.autoplay.stop();
-        sw = 1;
-    }else{
-        $('.btn_pause').removeClass('on');
-        mySwiper.autoplay.start();
-        sw = 0;
-    }
+const swiperEl = document.querySelector('.btn_pause');
+swiperEl.addEventListener('click', function () {
+  slideEl.autoplay.stop();
+})
+const swiperclEl = document.querySelector('.btn_play');
+swiperclEl.addEventListener('click', function () {
+  slideEl.autoplay.start();
 });
 
 // CDMO SWIPER
-new Swiper('.cdmo .swiper' , {
+const cdmoEl = new Swiper('.cdmo .swiper', {
   direction: 'horizontal',
-  loop: false,
-  pagination: {
-    el: '.swiper-pagination-progressbar-fill',
-    clickable: true
-  },
-  navigation: {
-    nextEl: '.main2 .swiper-button-next',
-    prevEl: '.main2 .swiper-button-prev',
-  },
+    disableOnInteraction: false,
+  spaceBetween: 30,
 });
 
-
-// new Swiper('.medicine', {
-//   direction: 'horizontal',
-//   loop: true,
-//   slidesPerView: 'auto',
-//   spaceBetween: 30,
-//   breakpoints: {
-//     1024: {
-//     spaceBetween: 16
-//   }
-// }
-// })
+// WHAT WE MAKES
+const makesEl = new Swiper('.medicine .swiper', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  breakpoints: {
+    1024: {
+    spaceBetween: 16
+  }
+}
+});
 
 // to-Top scroll
 const toTopEl = document.querySelector('#to-Top');
@@ -81,6 +69,9 @@ toTopEl.addEventListener('click', function () {
 
 // 마우스 커서 효과는 구글링해서 아무거나
 
-// 중앙배치
-// 슬라이드 제작
+// 중앙배치 - 테크놀로지
+// 슬라이드 제작 cdmo, what we makes
+// technology 탭 제작
 // 헤더 전환버튼 제작
+// recruite 트랜지션
+// latest뉴스 정렬
