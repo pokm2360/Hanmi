@@ -168,10 +168,40 @@ header .main-menu .item .item__contents > ul > li ul li a:hover {
 }
 
 /* swiper */
+.main2 {
+  position: relative;
+}
+.main2 .swiper .swiper-wrapper .swiper-slide .slidetext {
+  position:absolute;
+  color: white;
+  font-size: 50px;
+  bottom: 500px;
+  left: 300px;
+}
+.main2 .swiper .swiper-wrapper .swiper-slide .slidetext2 {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  bottom: 500px;
+  left: 300px;
+}
+.main2 .swiper .swiper-wrapper .swiper-slide .slidetext3 {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  bottom: 500px;
+  left: 300px;
+}
+.main2 span {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  z-index: 5;
+}
 .main2 .swiper img {
   height: 100vh;
   width: 100%;
-  /* position: absolute; */
 }
 .main2 .swiper video {
   width: 100%;
@@ -181,6 +211,7 @@ header .main-menu .item .item__contents > ul > li ul li a:hover {
   bottom: 50px;
   z-index: 1;
 } */
+
 
 /* latest news */
 
@@ -402,19 +433,18 @@ header .main-menu .item .item__contents > ul > li ul li a:hover {
 .esg-report {
   width: 100%;
   height: 1080px;
+  background-color: #ccc;
+  box-sizing: border-box;
   background-image: url(/img/bg_esg_report.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-
 }
 .esg-report .inner {
   position: relative;
-  height: 350px;
+  height: 100%;
   width: 100%;
   max-width: 1552px;
   margin: 0 auto;
   padding: 200px 50px;
-
 }
 .esg-report .inner b {
   font-size: 100px;
@@ -523,8 +553,9 @@ color: black;
   background-color: #e1251b;
 }
 .stock .inner {
+  width: 100%;
   height: 100%;
-  margin: 0 176px;
+  margin: 0 70px;
   padding: 0 50px;
   display: flex;
   justify-content: center;
@@ -532,9 +563,8 @@ color: black;
 .stock .stockInfo {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-grow: 0.7;
   border-right: 1px solid white;
+
 }
 .stock .stockInfo strong {
   font-size: 50px;
@@ -546,15 +576,13 @@ color: black;
   display: flex;
   align-items: center;
   color: white;
-  font-size: 36px;
+  font-size: 20px;
   margin-left: 100px;
 }
 .stock .inner .material-symbols-outlined {
-  width: 100%;
   display: flex;
   align-items: center;
   color: white;
-  flex-grow: 0.1;
 }
 .stock .inner .stockInfo .stockIframe {
   align-items: center;
