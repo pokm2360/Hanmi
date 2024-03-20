@@ -17,33 +17,101 @@ const slideEl = new Swiper('.main2 .swiper', {
     prevEl: '.main2 .swiper-button-prev',
   },
 });
-const swiperEl = document.querySelector('.btn_pause');
+// play, pause 버튼
+// 토글 버튼을 클릭했을 때 아이콘 플레이로 변경, 슬라이드 멈춤 
+// 다시 클릭하면 아이콘 pause로 변경, 슬라이드 재생
+const swiperEl = document.querySelector('.main2 .material-icons');
+let isPaused = false;
 swiperEl.addEventListener('click', function () {
-  slideEl.autoplay.stop();
-})
-const swiperclEl = document.querySelector('.btn_play');
-swiperclEl.addEventListener('click', function () {
-  slideEl.autoplay.start();
+  if (isPaused) {
+    slideEl.autoplay.start();
+    swiperEl.textContent = 'pause';
+    isPaused = false;
+  } else {
+    slideEl.autoplay.stop();
+    swiperEl.textContent = 'play_arrow';
+    isPaused = true;
+  }
 });
+// swiperEl.addEventListener('click', function () {
+//   if (isPaused) {
+//     slideEl.autoplay.stop();
+//     swiperEl.textContent = 'play_arrow';
+//   } else {
+//     slideEl.autoplay.start();
+//     swiperEl.textContent = 'pause';
+//   }
+
+// })
+
+// const swiperEl = document.querySelector('.btn_play');
+// swiperEl.addEventListener('click', function () {
+//   slideEl.autoplay.start();
+// });
+
+// play, pause 버튼 status
+// swiperEl.addEventListener('click', function () {
+//   swiperEl.classList.add('status');
+// })
+// swiperclEl.addEventListener('click', function () {
+//   swiperclEl.classList.add('status');
+// })
+
+// if (swiperclEl.classList.contains('status')) {
+//   swiperEl.classList.remove('status');
+// }
+
 
 // CDMO SWIPER
 const cdmoEl = new Swiper('.cdmo .swiper', {
   direction: 'horizontal',
-    disableOnInteraction: false,
+  disableOnInteraction: false,
   spaceBetween: 30,
+  slidesPerView: 1.3,
+  freeMode: true,
+});
+
+// CDMO SLIDE POINTER
+const cursor = document.querySelector('.cdmo .slidePointer'); 
+
+const moveCursor = (e) => {
+  const mouseY = e.clientY;
+  const mouseX = e.clientX;
+
+  cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+}
+
+const swiperWrapper = document.querySelector('.cdmo .swiper-wrapper');
+
+swiperWrapper.addEventListener('mousemove', moveCursor);
+
+const setOpacity = (opacityValue) => {
+  cursor.style.opacity = opacityValue;
+}
+
+swiperWrapper.addEventListener('mousemove', () => {
+  moveCursor(event);
+  setOpacity(1);
+});
+
+swiperWrapper.addEventListener('mouseleave', () => {
+  setOpacity(0);
 });
 
 // WHAT WE MAKES
 const makesEl = new Swiper('.medicine .swiper', {
-  direction: 'horizontal',
+  freeMode: true,
   loop: true,
-  slidesPerView: 'auto',
-  spaceBetween: 30,
-  breakpoints: {
-    1024: {
-    spaceBetween: 16
-  }
-}
+  slidesPerView: '3',
+  spaceBetween: 20,
+  pagination: {
+    el: '.medicine .swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.medicine .swiper-button-next',
+    prevEl: '.medicine .swiper-button-prev',
+  },
 });
 
 // to-Top scroll
@@ -53,25 +121,12 @@ toTopEl.addEventListener('click', function () {
     scrollTo: 0 
   })
 });
-// window.addEventListener('scroll', function () {
-//   if (window.scrollY) {
-//     gsap.to(toTopEl, 0.6, {
-//       opacity: 0,
-//       display: 'none'
-//     });
-//   } else { 
-//     gsap.to(toTopEl, 0.6, {
-//       opacity: 1,
-//       display: 'block'
-//     });
-//   }});
 
 
-// 마우스 커서 효과는 구글링해서 아무거나
+
 
 // 중앙배치 - 테크놀로지
-// 슬라이드 제작 cdmo, what we makes
 // technology 탭 제작
 // 헤더 전환버튼 제작
 // recruite 트랜지션
-// latest뉴스 정렬
+// 들여쓰기 확인

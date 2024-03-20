@@ -213,18 +213,8 @@ header .main-menu .item .item__contents > ul > li ul li a:hover {
   font-size: 150px;
   font-weight: 900;
 }
-.main2 .btn_play {
-  height: 30px;
-  position: absolute;
-  right: 450px;
-  bottom: 200px;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
-  z-index: 5;
-}
-.main2 .btn_pause{
-  height: 30px;
+.main2 .material-icons {
+  min-height: 30px;
   position: absolute;
   right: 400px;
   bottom: 200px;
@@ -246,11 +236,11 @@ header .main-menu .item .item__contents > ul > li ul li a:hover {
 
 .news {
   height: 1088px;
-  position: relative;
   justify-content: center;
   align-items: center;
 }
 .news > .inner {
+  position: relative;
   height: 100%;
   width: 100%;
   max-width: 1552px;
@@ -270,7 +260,7 @@ header .main-menu .item .item__contents > ul > li ul li a:hover {
 .news > .inner > a {
   position: absolute;
   top: 287px;
-  right: 500px;
+  right: 50px;
   padding: 15px 89px 15px 0;
   min-width: 191px;
   font-size: 20px;
@@ -281,22 +271,26 @@ header .main-menu .item .item__contents > ul > li ul li a:hover {
   display: flex;
   justify-content: space-between;
   margin-top: 90px;
+  column-gap: 10px;
 }
 .news .inner .news-content .news-content-1 img {
   width: 464px;
   height: 312px;
   border-radius: 15px 15px 0 0;
+  padding: 7px;
 }
 .news .inner .news-content .news-content-2 img {
   width: 464px;
   height: 312px;
   border-radius: 15px 15px 0 0;
   border: none;
+  padding: 7px;
 }
 .news .inner .news-content .news-content-3 img {
   width: 464px;
   height: 312px;
   border-radius: 15px 15px 0 0;
+  padding: 7px;
 }
 
 .news .inner .news-content h6 {
@@ -458,12 +452,99 @@ header .main-menu .item .item__contents > ul > li ul li a:hover {
   to { transform: translateX(-50%) ; }
 }
 
+/* CDMO */
+.cdmo {
+  background-color: #f9f9f9;
+  min-height: 1080px;
+}
+.cdmo .inner {
+  position: relative;
+  width: 100%;
+  max-width: 1552px;
+  margin: 0 auto;
+  padding: 200px 50px;
+}
+.cdmo .inner h2 p {
+  font-size: 90px;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+.cdmo .inner .cdmoslide .text {
+  width: 1188px;
+  display: flex;
+  align-items: center;
+  gap: 0 100px;
+  margin-top: 45px;
+  justify-content: space-between;
+}
+.cdmo .inner .cdmoslide .text h3 {
+  color: #e1251b;
+  font-size: 40px;
+  font-weight: 900;
+}
+.cdmo .inner .cdmoslide .text p {
+  color: #000;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.cdmo .inner .cdmoslide .swiper .swiper-wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  z-index: 1;
+  box-sizing: content-box;
+}
+.cdmo .inner .cdmoslide .slidePointer {
+  top: -50px;
+  left: -119px;
+  position: fixed;
+  width: 238px;
+  height: 100px;
+  background-image: url(/img/ico_cdmo_slide_pointer.svg);
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.1s;
+  z-index: 9999;
+  pointer-events: none;
+}
+
 /* WHAT WE MAKES */
+.medicine {
+  position: relative;
+  padding: 200px 0;
+  background-color: #091129;
+  text-align: center;
+}
+.medicine h2 {
+  font-size: 90px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 108px;
+}
+.medicine h2 b {
+  font-weight: 900;
+}
+.medicine .slide .swiper .img img {
+  border-radius: 50px;
+  filter: brightness(0.6);
+}
 .medicine .medicine5 {
   height: 600px;
   width: 600px;
 }
-
+.medicine .slide .swiper .swiper-wrapper .swiper-slide .text {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  color: white;
+  line-height: 1.9;
+  z-index: 1;
+}
+.medicine .slide .swiper .swiper-wrapper .swiper-slide .text h3 {
+  font-size: 40px;
+  font-weight: 900;
+}
 /* ESG REPORTS */
 .esg-report {
   width: 100%;
